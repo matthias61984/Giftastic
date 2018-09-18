@@ -3,10 +3,8 @@ $(document).ready(function() {
     var initialShows = [
         "The Simpsons",
         "Futurama",
-        "Thundercats",
         "Teenage Mutant Ninja Turtles",
         "Care Bears",
-        "He-Man",
         "Animaniacs",
         "Power Rangers",
         "Duck Tales",
@@ -33,8 +31,7 @@ $(document).ready(function() {
         createButton(newInput);
         $("input").val("");
     });
-
-    $(".queryButton").on("click", function() {
+    $(document).on("click", ".queryButton", function() {
         var show = $(this).attr("data-show");
         var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=P1YYLMXHak2pgn81RtohWxOssvjOmw0m&q=" + show + "&limit=10&offset=0&rating=G&lang=en"
         $.ajax({
@@ -49,7 +46,7 @@ $(document).ready(function() {
                 var rating = results[i].rating;
                 var p = $("<p>").text("Rating: " + rating);
                 var gifImage = $("<img>");
-                gifImage.attr("src", results[i].images.downsized_still.url);;
+                gifImage.attr("src", results[i].images.downsized_still.url);
                 gifDiv.prepend(gifImage);
                 gifDiv.prepend(p);
                 $("#gifArea").prepend(gifDiv);
