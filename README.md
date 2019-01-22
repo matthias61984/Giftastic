@@ -4,7 +4,7 @@ This application demonstrates the use of a basic ajax api call to retrieve infor
 
 ## Deployment
 
-Deployed on github pages at 
+Deployed on github pages at https://matthias61984.github.io/Giftastic/.
 
 ## Built With
 
