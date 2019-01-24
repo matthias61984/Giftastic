@@ -1,10 +1,18 @@
 # Giftastic
 
-This application demonstrates the use of a basic ajax api call to retrieve information from the giphy API. Users can click on a button to make a call to the giphy API which returns ten gifs that can then have their animations toggledby clicking the gif. Users may also create their own button by entering a value into th efield, then clicking on that button to make a call to the API with the value of th ebutton's input.
+This application demonstrates the use of a basic ajax api call to retrieve information from the giphy API. Users can click on a button to make a call to the giphy API which returns ten gifs that can then have their animations toggled by clicking the gif. Users may also create their own button to call new searches for the Giphy API.
 
 ## Deployment
 
 Deployed on github pages at https://matthias61984.github.io/Giftastic/.
+
+## To Use
+
+Click one of the buttons at the top of the page to generate 10 gifs from Giphy based on the button's value. You can also build your own button (and later click it to search exactly as the others do) by using the form field on the right side of the page. 
+
+![Alt text](./assets/images/giftasticScreenshot.png?raw=true "GiftasticScreenshot")
+
+
 
 ## Built With
 
